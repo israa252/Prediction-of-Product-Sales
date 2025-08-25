@@ -1,12 +1,55 @@
-# Prediction-of-Product-Sales
+# Sales Prediction Project
 
-## Project Overview
-This project involves exploring and cleaning a retail sales dataset to prepare it for analysis and predictive modeling. The dataset includes product details, store information, and sales data.  
+## Project Description
+This project aims to analyze and predict sales for products across different outlets.  
+It is divided into three main parts:
 
-Key steps include:  
-- Inspecting the dataset structure and data types.  
-- Handling missing values and removing duplicates.  
-- Standardizing categorical variables.  
-- Summarizing numerical features for analysis.  
+---
 
-The cleaned dataset is ready for further tasks such as predicting product sales.
+## Part 1 – Load and Inspect Data
+- Load the dataset into a pandas DataFrame.  
+- Inspect the dataset using `.info()`, `.head()`, `.shape`, and `.dtypes`.  
+- Understand the basic structure and types of the data.  
+
+---
+
+## Part 2 – Clean Data
+- Remove duplicate rows.  
+- Handle missing values:
+  - Fill missing numeric values (e.g., `Item_Weight`) with 0.  
+  - Fill missing categorical values (e.g., `Outlet_Size`) with 'Unknown'.  
+- Standardize text and correct inconsistent categories (e.g., `Item_Fat_Content`).  
+- Display summary statistics to verify the cleaning process.
+
+---
+
+## Part 3 – Exploratory Data Analysis (EDA)
+Focuses on **understanding the data** through visualization:
+
+### Key Visuals & Insights
+
+**1️⃣ Boxplot of `Item_Outlet_Sales`**  
+![Boxplot of Item_Outlet_Sales](<img width="515" height="463" alt="boxplot for iten outlet sales" src="https://github.com/user-attachments/assets/ab2965bf-d372-48fb-a3b3-ec5e7c6187b9" />
+)  
+*Interpretation:* Most products have moderate sales, while a few products show extremely high sales as outliers.
+
+**2️⃣ Countplot of `Outlet_Type`**  
+![Countplot of Outlet_Type]( <img width="586" height="536" alt="countplot outlet type" src="https://github.com/user-attachments/assets/5ff4e88e-8ac4-479b-b6a7-bde6dd4b45fa" />
+)  
+*Interpretation:* Supermarket Type1 stores are the most common, which could influence overall sales trends.
+
+### Additional Visualizations
+- **Histograms of numerical features** (`Item_Weight`, `Item_Visibility`, `Item_MRP`, `Item_Outlet_Sales`, `Outlet_Establishment_Year`) to understand distributions.  
+- **Boxplots of numerical features** to identify outliers.  
+- **Countplots of categorical features** (`Item_Fat_Content`, `Item_Type`, `Outlet_Size`, `Outlet_Location_Type`) to understand class frequencies.  
+- **Correlation heatmap** for numerical features to check relationships.
+
+---
+
+## How to Run
+1. Load the CSV data into a pandas DataFrame.  
+2. Use Matplotlib/Seaborn to generate visualizations.  
+3. Analyze the plots to derive insights and prepare for modeling.
+
+--
+ 
