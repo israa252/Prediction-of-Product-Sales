@@ -21,21 +21,21 @@ It is divided into three main parts:
 - Standardize text and correct inconsistent categories (e.g., `Item_Fat_Content`).  
 - Display summary statistics to verify the cleaning process.
 
----
-
 ## Part 3 – Exploratory Data Analysis (EDA)
 Focuses on **understanding the data** through visualization:
 
 ### Key Visuals & Insights
 
 **1️⃣ Boxplot of `Item_Outlet_Sales`**  
-![Boxplot of Item_Outlet_Sales](<img width="515" height="463" alt="boxplot for iten outlet sales" src="https://github.com/user-attachments/assets/ab2965bf-d372-48fb-a3b3-ec5e7c6187b9" />
-)  
+![Boxplot of Item_Outlet_Sales]
+<img width="515" height="463" alt="boxplot for iten outlet sales" src="https://github.com/user-attachments/assets/0b3dd4bc-952f-449a-899f-a0c1b37b81a5" />
+
 *Interpretation:* Most products have moderate sales, while a few products show extremely high sales as outliers.
 
 **2️⃣ Countplot of `Outlet_Type`**  
-![Countplot of Outlet_Type]( <img width="586" height="536" alt="countplot outlet type" src="https://github.com/user-attachments/assets/5ff4e88e-8ac4-479b-b6a7-bde6dd4b45fa" />
-)  
+![Countplot of Outlet_Type]
+<img width="586" height="536" alt="countplot outlet type" src="https://github.com/user-attachments/assets/d0979c9c-8ef0-4f5f-806e-321c40bb35d3" />
+
 *Interpretation:* Supermarket Type1 stores are the most common, which could influence overall sales trends.
 
 ### Additional Visualizations
