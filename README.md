@@ -51,5 +51,3 @@ Focuses on **understanding the data** through visualization:
 2. Use Matplotlib/Seaborn to generate visualizations.  
 3. Analyze the plots to derive insights and prepare for modeling.
 
---
- 
